@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jCheckBoxIgnoreDeprecatedAliasParam" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxGenAlias" alignment="0" min="-2" pref="488" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxIgnoreDeprecated" alignment="0" min="-2" pref="488" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxGenSingleFile" alignment="0" min="-2" pref="488" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxAddPreambleFiles" alignment="0" min="-2" pref="488" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxMergeOldImp" alignment="0" min="-2" pref="488" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxMergeCTemplates" alignment="0" min="-2" pref="488" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="21" pref="21" max="21" attributes="0"/>
+                      <Component id="jCheckBoxGenAddObjStatics" min="-2" pref="488" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jCheckBoxGenTypedef" alignment="0" min="-2" pref="488" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="jCheckBoxGenTypedef" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Component id="jCheckBoxGenAddObjStatics" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jCheckBoxGenAlias" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jCheckBoxIgnoreDeprecatedAliasParam" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="6" max="32767" attributes="0"/>
+              <Component id="jCheckBoxIgnoreDeprecated" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jCheckBoxGenSingleFile" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jCheckBoxAddPreambleFiles" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jCheckBoxMergeOldImp" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jCheckBoxMergeCTemplates" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxGenTypedef">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Generate object typedef and parameter access code."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxGenAlias">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Generate Alias Get/Set in CWMP framework (Amend. 4)"/>
+        <Property name="actionCommand" type="java.lang.String" value="Generate Alias instance set and get label code(CWMP v1.3)."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxGenAliasActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxIgnoreDeprecated">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ignore all DEPRECATED parameters."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxGenSingleFile">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Generate a single stubs file for all objects."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxAddPreambleFiles">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Add peamble files to stubs and header files."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="OK"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jOKButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxMergeCTemplates">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Merge *.c files from templates directory."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxMergeOldImp">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Merge *.c files from previous implementation."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxGenAddObjStatics">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Generate AddObject stubs for static Instance (eStaticInstance) objects."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxGenAddObjStaticsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxIgnoreDeprecatedAliasParam">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ignore DEPRECATED &apos;Alias&apos; parameters."/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
